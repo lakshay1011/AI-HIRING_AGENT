@@ -18,31 +18,6 @@ def clean_response(text):
     cleaned_text = cleaned_text.replace('┃', '').strip()
     return cleaned_text
 
-# Function to parse the cleaned response into a structured format
-# def parse_response_to_table(response):
-#     # Split the response into lines
-#     lines = response.strip().split('\n')
-    
-#     # Initialize a list to store rows
-#     rows = []
-    
-#     # Iterate through each line and extract data
-#     for line in lines[1:]:
-#         if line.strip():  # Skip empty lines
-#             # Split the line into columns using regex to handle varying spaces
-#             columns = re.split(r'\s{2,}', line.strip())  # Split by 2 or more spaces
-#             if len(columns) >= 5:  # Ensure all columns are present
-#                 rows.append({
-#                     "Name": columns[0],
-#                     "Profile URL": columns[1],
-#                     "Experience": columns[2],
-#                     "Location": columns[3],
-#                     "Skillset": columns[4],
-#                     "Confidence Score": columns[5] if len(columns) > 5 else "N/A"
-#                 })
-    
-#     # Convert the list of rows into a Pandas DataFrame
-#     return pd.DataFrame(rows)
 def parse_response_to_table(response):
     # Split the response into lines
     lines = response.strip().split('\n')
