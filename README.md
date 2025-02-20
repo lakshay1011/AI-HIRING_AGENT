@@ -12,6 +12,6 @@ An **AI-powered hiring assistant** that automates **LinkedIn profile searches** 
 - **Groq’s Llama 3 (70B)** – AI model for reasoning & execution  
 - **Google Search API** – For fetching LinkedIn profiles  
 - **Crawl4AI Tools** – For web crawling & data extraction  
-- **Phi Agents** – AI agent framework  
+- **PhiData** – MultiModal AI agent framework  
 - **Python** – Backend scripting  
 
